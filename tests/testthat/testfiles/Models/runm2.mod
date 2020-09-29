@@ -23,7 +23,7 @@ $PROBLEM THEOPP example
 
 $INPUT ID AMT TIME DV WT
 $DATA ../DerivedData/THEOPP.csv IGNORE=@
-$SUB ADVAN4 TRANS1
+$SUB ADVAN4
 $PK
 
 TVKA=EXP(THETA(1))
@@ -43,13 +43,11 @@ CL = K*V2
 S2 = V2
 
 TVK23=EXP(THETA(6))
-            MU_4=LOG(TVK23)
-            K23 = EXP(MU_4+ETA(4))
-          
+MU_4=LOG(TVK23)
+K23 = EXP(MU_4+ETA(4))
 TVK32=EXP(THETA(7))
-            MU_5=LOG(TVK32)
-            K32 = EXP(MU_5+ETA(5))
-          
+MU_5=LOG(TVK32)
+K32 = EXP(MU_5+ETA(5))
 $ERROR
 
 IPRED=F

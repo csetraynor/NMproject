@@ -1,14 +1,14 @@
 #START OF AUTO-GENERATED PREAMBLE, WILL BE OVERWRITTEN WHEN THIS FILE IS USED AS A TEMPLATE
-#Created 2020-04-22 at 18:06
+#Created 2020-09-29 at 15:02
 
 rplots.level <- 1
 xpose.runno <- 'm1'
 toolname <- 'execute'
 pdf.filename <- paste0('PsN_',toolname,'_plots.pdf')
 pdf.title <- 'execute diagnostic plots run m1'
-working.directory<-'/scratch/klgk669/test62/Models/m1_1/'
+working.directory<-'/home/klgk669/NMproject/tests/testthat/test_nmproject/Models/m1_1/'
 raw.results.file <- 'raw_results_runm1.csv'
-model.directory<-'/scratch/klgk669/test62/Models/'
+model.directory<-'/home/klgk669/NMproject/tests/testthat/test_nmproject/Models/'
 model.filename<-'runm1.mod'
 subset.variable<-NULL
 mod.suffix <- '.mod'

@@ -1,4 +1,4 @@
-Wed Apr 22 18:06:05 UTC 2020
+Tue Sep 29 15:02:38 UTC 2020
 ;; 1. Based on: m1
 ;; 2. Description: 1CMT+oral
 ;; x1. Author: klgk669
@@ -36,7 +36,7 @@ $PROBLEM    THEOPP example
 ;; IMP
 $INPUT      ID AMT TIME DV WT
 $DATA      THEOPP.csv IGNORE=@
-$SUBROUTINE ADVAN4 TRANS1
+$SUBROUTINE ADVAN4
 $PK 
 
 TVKA=EXP(THETA(1))
@@ -56,13 +56,11 @@ CL = K*V2
 S2 = V2
 
 TVK23=EXP(THETA(6))
-            MU_4=LOG(TVK23)
-            K23 = EXP(MU_4+ETA(4))
-          
+MU_4=LOG(TVK23)
+K23 = EXP(MU_4+ETA(4))
 TVK32=EXP(THETA(7))
-            MU_5=LOG(TVK32)
-            K32 = EXP(MU_5+ETA(5))
-          
+MU_5=LOG(TVK32)
+K32 = EXP(MU_5+ETA(5))
 $ERROR 
 
 IPRED=F
@@ -124,10 +122,11 @@ NM-TRAN MESSAGES
  (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_DIVIDE_BY_ZERO
 
-License Registered to: AstraZeneca - R
-Expiration Date:    14 AUG 2020
-Current Date:       22 APR 2020
-Days until program expires : 112
+License Registered to: Astrazeneca
+Expiration Date:    14 OCT 2020
+Current Date:       29 SEP 2020
+  **** WARNING!!! Days until program expires :  15 ****
+  **** CONTACT idssoftware@iconplc.com FOR RENEWAL ****
 1NONLINEAR MIXED EFFECTS MODEL PROGRAM (NONMEM) VERSION 7.3.0
  ORIGINALLY DEVELOPED BY STUART BEAL, LEWIS SHEINER, AND ALISON BOECKMANN
  CURRENT DEVELOPERS ARE ROBERT BAUER, ICON DEVELOPMENT SOLUTIONS,
@@ -756,7 +755,7 @@ Days until program expires : 112
  EPSshrink(%):   1.0849E+01
 
  #TERE:
- Elapsed estimation time in seconds:     1.14
+ Elapsed estimation time in seconds:     1.45
 0R MATRIX ALGORITHMICALLY SINGULAR
 0COVARIANCE MATRIX UNOBTAINABLE
 0R MATRIX IS OUTPUT
@@ -1171,6 +1170,6 @@ Days until program expires : 112
 +       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
          ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
  
- #CPUT: Total CPU Time in Seconds,        2.039
+ #CPUT: Total CPU Time in Seconds,        2.030
 Stop Time:
-Wed Apr 22 18:06:12 UTC 2020
+Tue Sep 29 15:02:45 UTC 2020
